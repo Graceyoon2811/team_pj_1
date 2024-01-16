@@ -72,6 +72,8 @@ h1{
     font-family: 'SEBANG_Gothic_Bold';
     color: white;
     transition-duration: .5s;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 3px rgb(139, 4, 4);
 }
 .box-001{
     background-color: #9c246c;
