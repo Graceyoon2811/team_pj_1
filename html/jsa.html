@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOAIR항공</title>
+    <link rel="stylesheet" href="../jsa_css/style.css" type="text/css">
+    <script src="../jsa_js/jquery-1.12.3.js"></script>
+    <!-- defer 속성은 script가 잠깐 지역 되도록 하여  HTML 구문 분석이 완료된 후 스크립트를 실행하도록 함-->
+    <script src="../jsa_js/script.js" defer type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="#"><img src="../resources/koair.png" alt="로고이미지"></a>
+            </div>
+            <nav class="menu">
+            <ul class="navi">
+                <li>
+                    <a href="#">회사소개</a>
+                    <ul class="submenu">
+                        <li><a href="intro.html" target="intro">KOAIR소개</a></li>
+                        <li><a href="#">제휴항공사</a></li>
+                        <li><a href="#">홍보채널</a></li>
+                        <li><a href="#">사회공헌</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">이용안내</a>
+                    <ul class="submenu">
+                        <li><a href="#">마일리지적립</a></li>
+                        <li><a href="#">마일리지사용</a></li>
+                        <li><a href="#">이달의할인혜택</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">예약</a>
+                    <ul class="submenu">
+                        <li><a href="#">항공권예약</a></li>
+                        <li><a href="#">예약확인</a></li>
+                        <li><a href="#">예약취소</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">커뮤니티</a>
+                    <ul class="submenu">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이용후기</a></li>
+                        <li><a href="#">자유게시판
+                            
+                        </a></li>
+                    </ul>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </header>    
+
+    <iframe class="bodywrap" name="intro" src="main.html"></iframe>
+
+    <footer>
+        <!-- <div class="btlogo">
+            <a href="#"><img src="images/logo_bottom.png" 
+                alt="하단로고"></a>
+        </div> -->
+    
+        <div class="site">
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><img src="../resources/sns1.jpg" alt="sns 이미지1"></a></li>
+                    <li><a href="#"><img src="../resources/sns2.jpg" alt="sns 이미지2"></a></li>
+                    <li><a href="#"><img src="../resources/sns3.jpg" alt="sns 이미지3"></a></li>
+                </ul>
+            </div>
+            <div class="familysite">
+                <select name="sitelist" id="sitelist">
+                    <option value="#">패밀리사이트1</option>
+                    <option value="#">패밀리사이트2</option>
+                    <option value="#">패밀리사이트3</option>
+                </select>
+            </div>
+        </div> <!-- end .site-->
+        
+        <div class="copy">
+            KOAIR㈜ 대표이사 *** 사업자등록번호 111-11-1111 통신판매업 신고 제 11-1111<br /> 
+            서울특별시 강서구 곰달래로 27길 예약 1511-0000 / 02-1111-0000<br />
+            개인정보보호책임자 온라인마케팅 ***서버 위치 : KOAIR㈜ 전산센터<br />
+            COPYRIGHT ©  by WEBDESIGN. ALL RIGHTS RESERVED
+        </div>
+    </footer>
+
+    <script>
+        (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+    
+        ChannelIO('boot', {
+        "pluginKey": "ef629262-85cf-4ba2-98a8-c240f51a72e9"
+        });
+    </script>
+</body>
+</html>
