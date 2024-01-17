@@ -9,17 +9,15 @@
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
   <title>MediFinder -Better Care, Anywhere</title>
-  <link rel="icon" href="/resource/ysp/img/MediFinder.svg">
-
-  <link rel="stylesheet" href="/css/ysp_css/maicons.css">
-  <link rel="stylesheet" href="/css/ysp_css/bootstrap.css">
-  <link rel="stylesheet" href="/css/ysp_css/animate.css">
-  <link rel="stylesheet" href="/css/ysp_css/theme.css">
-  <link rel="stylesheet" href="/css/ysp_css/style_1.css">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
-
+  <link rel="icon" href="../resource/ysp_img/MediFinder.svg">
+  <!-- <link rel="stylesheet" href="../css/ysp_css/jquery.bxslider.min.css"> -->
+  <link rel="stylesheet" href="../css/ysp_css/maicons.css">
+  <link rel="stylesheet" href="../css/ysp_css/bootstrap.css">
+  <link rel="stylesheet" href="../css/ysp_css/animate.css">
+  <link rel="stylesheet" href="../css/ysp_css/theme.css">
+  <link rel="stylesheet" href="../css/ysp_css/style_1.css">
+  <link rel="stylesheet" href="../css/ysp_css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../css/ysp_css/owl.theme.default.css">
 
   <style>
     #wrapper{
@@ -48,6 +46,12 @@
 
 </head>
 <body>
+  
+  <div class="slider">
+    <div>I am a slide.</div>
+    <div>I am another slide.</div>
+  </div>
+
 
   <!-- Back to top button -->
   <div class="back-to-top"></div>
@@ -97,7 +101,7 @@
           </div>
           <div class="col-md-6 py-5 wow zoomIn">
             <div class="img-fluid text-center">
-              <img src="/resource/ysp_img/MediFinder.svg" alt="" class="MagnifyingGlassLogo" height="500px" width="500px">
+              <img src="../resource/ysp_img/MediFinder.svg" alt="" class="MagnifyingGlassLogo" height="500px" width="500px">
             </div>
           </div>
         </div>
@@ -112,15 +116,17 @@
         <div class="col-lg-4">
           <div class="card-service wow fadeInUp">
             <div class="header">
-<<<<<<< HEAD
               <img src="/resource/ysp_img/Find_icon.svg" alt="" height="100px" width="100px">
-=======
-              <img src="/resource/ysp/img/Find_icon.svg" alt="" height="100px" width="100px">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Find</h5>
+              <p>We will help you find the nearest hospital in accordance with your preferred mode of travel</p>
             </div>
               <a href="service.html" class="btn btn-primary">Read More</a>
             </div>
           </div>
-        </div>
+        
+
         <div class="col-lg-4">
           <div class="card-service wow fadeInUp">
             <div class="header">
@@ -133,6 +139,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-4">
           <div class="card-service wow fadeInUp">
             <div class="header">
@@ -194,20 +201,19 @@
 
         <div class="row">
 
-          <div class="features mx-auto">
-            <div class="header mx-auto" id="wrapper" >
-                <div class="item"><img src="/resource/ysp_img/korea.jpg" alt="Korea" width="500px" height="300px"></div>
-                <div class="item"><img src="/resource/ysp_img/canada.jpg" alt="Canada" width="500px" height="300px"></div>
-                <div class="item"><img src="/resource/ysp_img/italy.jpg" alt="Italy" width="500px" height="300px"></div>
-                <div class="item"><img src="/resource/ysp_img/usa.jpg" alt="USA" width="500px" height="300px"></div>
-                <div class="item"><img src="/resource/ysp_img/france.jpg" alt="France" width="500px" height="300px"></div>
+          <div class="features mx-auto" id="wrapper">
+            <div class="header mx-auto owl-carousel owl-theme" id="wrapper" >
+                <div class="item"><img src="/resource/ysp_img/korea.jpg" alt="Korea" title="South Korea"width="500px" height="300px"></div>
+                <div class="item"><img src="/resource/ysp_img/canada.jpg" alt="Canada" title="Canada" width="500px" height="300px"></div>
+                <div class="item"><img src="/resource/ysp_img/italy.jpg" alt="Italy" title="Italy" width="500px" height="300px"></div>
+                <div class="item"><img src="/resource/ysp_img/usa.jpg" alt="USA" title="United States of America" width="500px" height="300px"></div>
+                <div class="item"><img src="/resource/ysp_img/france.jpg" alt="France" title="France" width="500px" height="300px"></div>
+            </div>
           </div>
-       
-        </div>
 
-    </div> <!-- .container -->
-  </div> <!-- .page-section -->
-
+      </div> <!-- .container -->
+    </div> <!-- .page-section -->
+  </div>
   <div class="page-section banner-seo-check">
     <div class="wrap bg-image" style="background-image: url(/resource/ysp_img/bg_pattern.svg);">
       <div class="container text-center">
@@ -252,15 +258,6 @@
                             <br>
                             <div class="map_wrap" style="width:100%;height:500px; margin:10px auto" data-aos="fade" data-aos-duration="2500" >
                               <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div> 
-                              <!-- 지도타입 컨트롤 div 입니다 -->
-                              <div class="custom_typecontrol radius_border">
-                                  <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
-                                  <span id="btnSkyview" class="btn" onclick="setMapType('skyview')">스카이뷰</span>
-                              </div>
-                              <!-- 지도 확대, 축소 컨트롤 div 입니다 -->
-                              <div class="custom_zoomcontrol radius_border"> 
-                                  <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>  
-                                  <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
                               </div>
                             </div>
                           </div>
@@ -412,50 +409,32 @@
     </div>
   </footer>
 
-<script src="/js/ysp_jsjquery-3.5.1.min.js"></script>
-<script src="/js/ysp_js/bootstrap.bundle.min.js"></script>
-<script src="/js/ysp_js/google-maps.js"></script>
-<script src="/js/ysp_js/wow.min.js"></script>
-<script src="/js/ysp_js/theme.js"></script>
+<!-- <script src="/js/ysp_js/jquery-3.5.1.min.js"></script> -->
+<!-- <script src="../js/ysp_js/jquery.bxslider.min.js"></script> -->
+<script src="../js/ysp_js/jquery-2.2.4.min.js"></script>
+<script src="../js/ysp_js/bootstrap.bundle.min.js"></script>
+<script src="../js/ysp_js/google-maps.js"></script>
+<script src="../js/ysp_js/wow.min.js"></script>
+<script src="../js/ysp_js/theme.js"></script>
+<script src="../js/ysp_js/owl.carousel.js"></script>
+<script src="../js/ysp_js/owl.autoplay.js"></script>
+<script src="../js/ysp_js/owl.navigation.js"></script>
 <!-- <script src="/016 seogram-1.0.0/assets/js/owl.autoplay.js"></script>
 <script src="/016 seogram-1.0.0/assets/js/owl.carousel.js"></script>
 <script src="/016 seogram-1.0.0/assets/js/owl.navigation.js"></script> -->
-<script src="/js/ysp_js/jquery.bxslider.js"></script>
-<script src="/css/ysp_css/jquery.bxslider.css"></script>
-<script src="/js/ysp_js/jquery-2.2.4.min.js"></script>
+
 <script>
-// $(function(){
-//   var owl = $('.owl-carousel');
-//   owl.owlCarousel({
-//     items:1,
-//     loop:true,
-//     margin:10,
-//     autoplay:true,
-//     autoplayTimeout:1000,
-//     autoplayHoverPause:true
-//   });
-// });
-  $(document).ready(function(){
-    $(".bxslider").bxSlider({
-        // 자동 실행 설정(true : 활성화)
-        auto: true,
-        // 컨트롤 버튼(재생/정지) 표시
-        autoControls: true,
-        // 클릭해서 자동 실행 멈출 수 있도록 지정
-        stopAutoOnClick: true,
-        // 슬라이드 전환 지속 시간(다음 슬라이드로 전환되는 과정에서의 사이 시간)
-        // 2000ms = 2s(2초)
-        speed: 2000,
-        // 다음 전환까지 멈춰있는 시간(다음 슬라이드로 전환되기 전에 잠깐 멈춤 시간)
-        // 3000ms = 3s(3초)
-        pause: 3000,
-        // 페이지 표시 보여짐
-        // pager Default 기본값 (pager:false 페이지 표시 안함)
-        pager: true,
-        // 스크린에 맞춘 반응형 슬라이드 폭 설정
-        slideWidth: 600
+  $(function(){
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+      items:3,
+      loop:true,
+      margin:10,
+      autoplay:true,
+      autoplayTimeout:1000,
+      autoplayHoverPause:true
       });
-   });
+  });
 </script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cdd8e2de7f771943377d29293a5592b0"></script>
 <script>
@@ -466,31 +445,12 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
     };  
 
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+var mapTypeControl = new kakao.maps.MapTypeControl();
+map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+var zoomControl = new kakao.maps.ZoomControl();
+map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
     
-// 지도타입 컨트롤의 지도 또는 스카이뷰 버튼을 클릭하면 호출되어 지도타입을 바꾸는 함수입니다
-function setMapType(maptype) { 
-    var roadmapControl = document.getElementById('btnRoadmap');
-    var skyviewControl = document.getElementById('btnSkyview'); 
-    if (maptype === 'roadmap') {
-        map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP);    
-        roadmapControl.className = 'selected_btn';
-        skyviewControl.className = 'btn';
-    } else {
-        map.setMapTypeId(kakao.maps.MapTypeId.HYBRID);    
-        skyviewControl.className = 'selected_btn';
-        roadmapControl.className = 'btn';
-    }
-}
 
-// 지도 확대, 축소 컨트롤에서 확대 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
-function zoomIn() {
-    map.setLevel(map.getLevel() - 1);
-}
-
-// 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
-function zoomOut() {
-    map.setLevel(map.getLevel() + 1);
-}
 // 마커가 표시될 위치입니다 
 var markerPosition  = new kakao.maps.LatLng(37.4272395, 126.9868669); 
 

@@ -2,6 +2,8 @@
 ===================================*/
 /** RESET AND LAYOUT
 ===================================*/
+@charset "utf-8";
+
 .bx-wrapper {
   position: relative;
   margin-bottom: 60px;
